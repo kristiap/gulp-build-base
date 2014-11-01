@@ -30,9 +30,9 @@ module.exports = {
         // bundle config in the list below
         bundleConfigs: [
             {
-                entries: src + '/scripts/main.js',
+                entries: src + '/scripts/app.js',
                 dest: dest,
-                outputName: 'scripts/main.js'
+                outputName: 'scripts/app.js'
             }
         ]
     }

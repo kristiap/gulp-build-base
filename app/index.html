@@ -1,9 +1,14 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles/styles.css"/>
-    <script src="scripts/main.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
 </head>
-<body>
-Hello world!!!!
+<body ng-app="Test">
+<div ng-controller="MainController as mc">
+    <div>{{mc.text}}</div>
+    <div><input name="text" type="text" ng-model="mc.text"/></div>
+    <div><button ng-click="mc.clearText()">click me</button></div>
+</div>
 </body>
 </html>
